@@ -1,0 +1,502 @@
+/* rESET
+========================================================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/* bODY
+========================================================== */
+body{
+    font-family: sans-serif;
+    background: rgb(252, 245, 236);
+}
+/* hEADER
+========================================================== */
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding: .5%;
+    align-items: center;
+}
+.header__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: #6e3f31;
+}
+.header__logo h2{
+    display: flex;
+    margin-top: 8px;
+}
+.header__nav{
+    display: flex;
+}
+.header__nav ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.header__nav li{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    color: #6e3f31;
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 20px;
+    border: none;
+}
+.header__nav li:hover{
+    color: rgb(175, 172, 155);
+    border: 1px rgb(0, 0, 0);
+}
+/* mAIN
+========================================================== */
+.main{
+    display: flex;
+    background-image: url(../Cafe1/cafe.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    padding-top: 14%;
+    padding-bottom: 14%;
+}
+.main__titulo{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: antiquewhite;
+}
+.main__titulo h1{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+.main__titulo p{
+    display: flex;
+    font-size: 25px;
+
+}
+/* mAIN2
+========================================================== */
+.main2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 4%;
+}
+.main2__titulo{
+    display: flex;
+    flex-direction: column;
+}
+.main2__titulo h1{
+    font-size: 40px;
+    color: #6e3f31;
+    padding-bottom: 10px;
+}
+.main2__titulo p{
+    font-size: 25px;
+    color: #6e3f31;
+}
+.main2__produtos{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-around;
+    margin-right: 6%;
+    margin-left: 6%;
+    position: relative;
+    overflow: hidden;
+}
+.main2__produto1{
+    display: block;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: -10%;
+    background: aliceblue;
+}
+.produto1__imagem{
+    display: flex;
+    z-index: 2;
+    transform: scale(1.2);
+    transition: all 240ms ease-in;
+}
+.main2__produto1:hover .produto1__imagem{
+    transform: scale(1);
+    opacity: 0.2;
+}
+.produto1__titulo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: -10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: none;
+    opacity: 0;
+    transition: all 180ms ease-in;
+    z-index: 1;
+}
+.main2__produto1:hover .produto1__titulo{
+    opacity: 1;
+    margin-bottom: 0%;
+    margin-top: -60%;
+}
+
+
+.main2__produto2{
+    display: block;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: -10%;
+    background: aliceblue;
+}
+.produto2__imagem{
+    display: flex;
+    z-index: 1;
+    transform: scale(1.2);
+    transition: all 240ms ease-in;
+}
+.main2__produto2:hover .produto2__imagem{
+    transform: scale(1);
+    opacity: 0.2;
+}
+.produto2__titulo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: -10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: none;
+    opacity: 0;
+    transition: all 180ms ease-in;
+    z-index: 1;
+}
+.main2__produto2:hover .produto2__titulo{
+    opacity: 1;
+    margin-bottom: 0%;
+    margin-top: -60%;
+}
+
+.main2__produto3{
+    display: block;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: -10%;
+    background: aliceblue;
+}
+.produto3__imagem{
+    display: flex;
+    z-index: 1;
+    transform: scale(1.2);
+    transition: all 240ms ease-in;
+}
+.main2__produto3:hover .produto3__imagem{
+    transform: scale(1);
+    opacity: 0.2;
+}
+.produto3__titulo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: -10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: none;
+    opacity: 0;
+    transition: all 180ms ease-in;
+    z-index: 1;
+}
+.main2__produto3:hover .produto3__titulo{
+    opacity: 1;
+    margin-bottom: 0%;
+    margin-top: -60%;
+}
+
+/* pRODUTOS 2
+===================================*/
+.main2__produtos2{
+    display: flex;
+    margin-top: 6%;
+    justify-content: space-around;
+    margin-right: 6%;
+    margin-left: 6%;
+    position: relative;
+    overflow: hidden;
+}
+.main2__produto4{
+    display: block;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: -10%;
+    background: aliceblue;
+}
+.produto4__imagem{
+    display: flex;
+    z-index: 2;
+    transform: scale(1.2);
+    transition: all 240ms ease-in;
+}
+.main2__produto4:hover .produto4__imagem{
+    transform: scale(1);
+    opacity: 0.2;
+}
+.produto4__titulo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: -10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: none;
+    opacity: 0;
+    transition: all 180ms ease-in;
+    z-index: 1;
+}
+.main2__produto4:hover .produto4__titulo{
+    opacity: 1;
+    margin-bottom: 0%;
+    margin-top: -60%;
+}
+
+
+.main2__produto5{
+    display: block;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: -10%;
+    background: aliceblue;
+}
+.produto5__imagem{
+    display: flex;
+    z-index: 1;
+    transform: scale(1.2);
+    transition: all 240ms ease-in;
+}
+.main2__produto5:hover .produto5__imagem{
+    transform: scale(1);
+    opacity: 0.2;
+}
+.produto5__titulo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: -10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: none;
+    opacity: 0;
+    transition: all 180ms ease-in;
+    z-index: 1;
+}
+.main2__produto5:hover .produto5__titulo{
+    opacity: 1;
+    margin-bottom: 0%;
+    margin-top: -60%;
+}
+
+.main2__produto6{
+    display: block;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: -10%;
+    background: aliceblue;
+}
+.produto6__imagem{
+    display: flex;
+    z-index: 1;
+    transform: scale(1.2);
+    transition: all 240ms ease-in;
+}
+.main2__produto6:hover .produto6__imagem{
+    transform: scale(1);
+    opacity: 0.2;
+}
+.produto6__titulo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: -10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background: none;
+    opacity: 0;
+    transition: all 180ms ease-in;
+    z-index: 1;
+}
+.main2__produto6:hover .produto6__titulo{
+    opacity: 1;
+    margin-bottom: 0%;
+    margin-top: -60%;
+}
+
+.loadmore{
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+.loadmore button{
+    padding: 9px;
+    font-size: 20px;
+    border: 1px #6e3f31;
+    border-radius: 10px;
+    color: #6e3f31;
+    background: rgb(253, 244, 228);
+    cursor: pointer;
+    transition: all 180ms ease-in;
+    transform: scale(1);
+}
+.loadmore button:hover{
+    background: wheat;
+    transform: scale(1.05);
+}
+
+/*eQUIPE
+==============================================================*/
+.equipe{
+    display: flex;
+    margin-top: 4%;
+    justify-content: center;
+    background-image: url(../Cafe1/equipe.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.equipe__titulo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: antiquewhite;
+    margin-right: 60%;
+    margin-left: 5%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+}
+.equipe__titulo h2{
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.equipe__titulo p{
+    font-size: 28px;
+}
+
+/*nOSSAS LOJAS
+==============================================================*/
+.lojas{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+}
+.lojas__titulo{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+.lojas__titulo h2{
+    color: #6e3f31;
+    font-size: 40px;
+}
+.lojas__enderecos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 4%;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+.loja1{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    border-radius: 10px;
+    height: 325px;
+    width: 700px;
+    overflow: hidden;
+}
+.loja1__imagem{
+    display: flex;
+    justify-content: center;
+    transform: scale(1.2);
+    transition: all 210ms ease-in;
+}
+.loja1:hover .loja1__imagem{
+    transform: scale(1);
+}
+.loja1__titulo{
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+    margin-top: 50%;
+    transition: all 210ms ease-in;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    margin-top: -10%;
+    z-index: 1;
+}
+.loja1:hover .loja1__titulo{
+    margin-top: -30%;
+}
+
+.loja2{
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    border-radius: 10px;
+    height: 325px;
+    width: 700px;
+    overflow: hidden;
+}
+.loja2__imagem{
+    display: flex;
+    justify-content: center;
+    transform: scale(1.1);
+    transition: all 210ms ease-in;
+    margin-top: -5%;
+}
+.loja2:hover .loja2__imagem{
+    transform: scale(0.9);
+}
+.loja2__titulo{
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+    margin-top: 50%;
+    transition: all 210ms ease-in;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 10%;
+    padding-top: 10%;
+    margin-top: -10%;
+    z-index: 1;
+}
+.loja2:hover .loja2__titulo{
+    margin-top: -25%;
+}
