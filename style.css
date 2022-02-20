@@ -407,7 +407,7 @@ body{
 .lojas{
     display: flex;
     flex-direction: column;
-    margin-bottom: 4%;
+    margin-bottom: 8%;
 }
 .lojas__titulo{
     display: flex;
@@ -499,4 +499,42 @@ body{
 }
 .loja2:hover .loja2__titulo{
     margin-top: -25%;
+}
+
+
+/*fOOTER
+==============================================================*/
+.footer{
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+    padding-top: 5%;
+    padding-bottom: 4%;  
+}
+.footer__contatos{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 2%;
+}
+.footer__contatos h2{
+    padding-bottom: 5%;
+}
+.footer__contatos ul li{
+    color: antiquewhite;
+    padding-bottom: 3%;
+}
+.footer__sociais{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 2%;
+}
+.footer__sociais h2{
+    padding-bottom: 5%;
+}
+.footer__sociais ul li{
+    color: antiquewhite;
+    padding-bottom: 3%;
 }
