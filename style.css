@@ -58,7 +58,7 @@ body{
 ========================================================== */
 .main{
     display: flex;
-    background-image: url(../Cafe1/cafe.jpg);
+    background-image: url(Cafe1/cafe.jpg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -379,7 +379,7 @@ body{
     display: flex;
     margin-top: 4%;
     justify-content: center;
-    background-image: url(../Cafe1/equipe.jpg);
+    background-image: url(Cafe1/equipe.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
